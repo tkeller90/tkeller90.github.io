@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Trail</title>
+
+    <script type="module" src="./interactSite.js"></script>
+    <link href="./interactSite.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div>
+        <h1>Tamriel</h1>
+            <button id="drawer">Menu</button>
+            <button id="dark">Dark Mode</button> <button class="active" id="light">Light Mode</button>
+    </div>
+
+    <div class="content">
+        <div class="eventInput">
+            <div class="buttonRow">
+                <button id="click">North</button>
+                <button id="click">South</button>
+                <button id="click">East</button>
+                <button id="click">West</button>
+                <button id="click">Up</button>
+                <button id="click">Down</button>
+            </div>
+
+            <div id="explainer"></div>
+        </div>
+    </div>
+
+    <nav id="nav">
+        <ul>
+            <li>Character</li>
+            <li>Inventory</li>
+            <li>Statistics</li>
+            <li>Settings</li>
+        </ul>
+
+        <button id="close">hide</button>
+    </nav>
+
+        <div>
+            <div><h2>The Road</h2></div>
+            
+            <p>You find yourself on the road. A ancient forest of oak trees lines the the eastern side of the road as far the your eye can see north and south. You could potentially follow an animal trail into the forest if you couched down and navigate a path. A board filled with notes is on the western side of the road. You could read or add your own notice if you wanted to offer your services to the province. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            In pellentesque nunc in ipsum sagittis rutrum vel sed nulla.
+            Mauris dapibus auctor dui, vel pulvinar ex ultricies non. Sed tincidunt a orci sed aliquet. Nam nisi libero, venenatis nec accumsan et, sodales eu quam. Nulla interdum est tortor, placerat laoreet neque elementum ut. Nam ipsum sem, luctus nec rutrum sed, mollis eget nunc. Suspendisse sed orci a elit pretium rutrum. Fusce nulla erat, tincidunt sed elementum vel, molestie vel lorem. Cras commodo volutpat sapien, at fermentum massa venenatis at. Donec ultrices non mauris at
+            sodales. Nulla accumsan sagittis ante, vitae aliquam nisl finibus at. Cras tempus commodo eros, feugiat gravida nunc.
+            Pellentesque facilisis nulla eget erat volutpat ultrices. Fusce malesuada nibh ex, nec tincidunt erat mattis in.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            In pellentesque nunc in ipsum sagittis rutrum vel sed nulla.
+            Mauris dapibus auctor dui, vel pulvinar ex ultricies non. Sed tincidunt a orci sed aliquet. Nam nisi libero, venenatis
+            nec accumsan et, sodales eu quam. Nulla interdum est tortor, placerat laoreet neque elementum ut. Nam ipsumsem, luctus nec rutrum sed, mollis eget nunc. Suspendisse sed orci a elit pretium rutrum. 
+            </p>
+    </div>
+
+    <div class="content">
+        <div class="eventInput">
+            <input id="input" type="text" placeholder='What do you want to do' onfocus="document.getElementById('input').style.border = 2"/> 
+        </div>
+
+    </div>
+
+</body>
+
+</html>

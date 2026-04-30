@@ -1,0 +1,149 @@
+* {
+        --baseColor: #1c0f13;
+        --borderColor:#6e7e85;
+        --cardColor:#b7cece;
+        --accentColor:#bbbac6;
+        --extraColor:#e2e2e2;
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: var(--borderColor);
+            border-radius: 8px;
+        }
+
+        .content {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttonRow {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .button, input {
+            display: flex;
+            flex-direction: row;
+            width: auto; 
+            background-color: var(--cardColor);
+            border-color: var(--borderColor);
+            border-radius: 8px; 
+            justify-content: space-evenly;
+            margin-bottom: 24px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-right: 10px;
+
+        }
+
+        button:hover {
+            background-color: var(--baseColor);
+            color: var(--extraColor);
+        }
+
+        #explainer {
+            margin: 10px 0;
+            width: 100%;
+            min-height: auto;
+            background-color: var(--accentColor);
+            border-radius: 4px;
+            border: .5px solid var(--borderColor);
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 0px 2px 1px -1px var(--baseColor),
+                0px 1px 1px 0px var(--baseColor),
+                0px 1px 3px 0px var(--baseColor);
+
+        }
+
+        #open {
+            display: none;
+            width: 100%;
+            min-height: auto;
+            background-color: var(--borderColor);
+            border-radius: 8px;
+            border: .5px solid var(--accentColor);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+
+        nav {
+            background-color: var(--baseColor);
+            color: var(--accentColor); 
+            position: fixed;
+            top: 0px;
+            left: -300px;
+            width: 300px;
+            height: 100vh;
+            font-size: 36px; 
+            font-family: "Righteous", sans-serif;
+            transition: left 2s ease-in;
+        }
+
+        .light {
+            border: .5px grey solid;
+            border-radius: 4px;
+            background-color: var(--extraColor);
+        }
+
+        .light-button {
+            background-color: var(--extraColor);
+            color: var(--baseColor);
+            border: .5px grey solid;
+        }
+
+        .active {
+            color: var(--extraColor);
+            background-color: var(--accentColor);
+            border: 0px;
+        }
+
+        .dark {
+            background-color: var(--baseColor);
+            color: var(--extraColor);
+            border-radius: 4px;
+            border: .5px solid var(--extraColor);
+        }
+
+        .dark-button {
+            background-color: var(--baseColor);
+            color: var(--extraColor);
+            border-radius: 4px;
+            border: .5px solid var(--extraColor);
+        }
+
+        h1 {
+            background-color: var(--extraColor);
+            padding-top: 10px;
+            height: 50px;
+            border-radius: 8px;
+            position: center;
+            text-align: center;
+            font-size: 24px;
+            margin: 6px;
+        }
+
+        h2 {
+            background-color: var(--accentColor);
+            color: var(--baseColor);
+            font-size: 28sspx;
+            height: 36px;
+            align-items: center;
+            border-radius: 8px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
